@@ -1,0 +1,92 @@
+body {
+    font-size: 28px;
+     }
+      ul {
+           list-style-type: none; 
+           margin: 0;
+            padding: 0;
+             overflow: hidden; 
+             background-color: #333;
+              position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                 } 
+                 li { 
+                     float: left; 
+                     } 
+                     li a {
+                          display: block;
+                           color: white;
+                            text-align: center; 
+                            padding: 14px 16px; 
+                            text-decoration: none; 
+                            }
+                             li a:hover { 
+                                 background-color: #111;
+                                  }
+                                   .active { 
+                                       background-color: lightblue; 
+                                       } 
+    .contenedor{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        min-height: 300px;
+        border: 1px solid black;
+        margin-top: 20px;
+        position: relative;
+    }
+    .img1{
+        float: left;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 400px;
+        height: 200px;
+    }
+    .img2{
+        float: left;
+        width: 400px;
+        height: 200px;
+        margin-top: 20px;
+        margin-left: 20px;
+
+    }
+    .img3{
+        float: left;
+        margin-top: 20px;
+        margin-right: 20px;
+        width: 400px;
+        height: 200px;
+        margin-left: 20px;
+    }
+    .cenverticalhor{
+        height: 300px;
+        line-height: 200px;
+        border: solid 1px black;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .cenverticalhor img{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .contenedortransform{
+        height: 300px;
+        position: relative;
+        
+        margin-top: 50px;
+        }
+        .capa1{
+            position: relative;
+            width: 20%;
+            min-height: 100px;
+            background-color: yellow;
+        }
+        .capa2{
+            position: relative;
+            width: 20%;
+            min-height: 100px;
+            background-color: yellow;
+            margin-left: 20px;
+        }
+    
