@@ -1,0 +1,29 @@
+@font-face{
+    font-family: mifuente;
+    src: url('../fonts/Inconsolata-Bold.ttf');
+}
+$fuente1: 'Courier New', Courier, monospace; /* declaracion de variable en sass */
+$fuente2: mifuente;
+
+div{
+    width: 80%;
+    min-height: 400px;
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid black;
+    .cajaroja{
+        width: 60%;
+        min-height: 200px;
+        background-color: red;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: $fuente1;/*utilizacion de la variable */
+        border: 1px solid black;
+    }
+}
+.fuente11{
+    font-family: $fuente2;
+    text-align: center;
+}
