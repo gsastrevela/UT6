@@ -1,0 +1,49 @@
+.contenedor {
+  overflow: auto;
+}
+
+#principal {
+  margin-left: 4px;
+}
+
+#barralateral {
+  float: none;
+  width: auto;
+}
+
+#listamenu {
+  margin: 0;
+  padding: 0;
+}
+
+.elementomenu {
+  background: #CDF0F6;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 4px;
+  padding: 2px;
+}
+
+@media screen and (min-width: 480px) {
+  #barralateral {
+    width: 200px;
+    float: left;
+  }
+
+  #principal {
+    margin-left: 216px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #barralateral {
+    width: auto;
+    float: none;
+  }
+
+  #principal {
+    margin-left: 4px;
+  }
+}
+
+/*# sourceMappingURL=hojaestilos3.css.map */
