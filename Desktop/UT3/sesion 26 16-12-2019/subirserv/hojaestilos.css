@@ -1,3 +1,64 @@
+.contenedorflex {
+  display: flex;
+  width: 500px;
+  background-color: dodgerblue;
+  padding: 20px;
+  min-height: 400px;
+}
+.contenedorflex > .elemento1 {
+  /*flex-basis: 200px;si lo fijas en un ancho determninado de hay no va a decrecer*/
+  flex-basis: 200px;
+  flex-grow: 3;
+  background-color: #f1f1f1;
+}
+.contenedorflex > .elemento2 {
+  flex-basis: auto;
+  flex-grow: 2;
+  background-color: #f1f1f1;
+}
+.contenedorflex > .elemento3 {
+  flex-basis: auto;
+  flex-grow: 2;
+  background-color: #f1f1f1;
+}
+.contenedorflex > .elementohijo1 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  align-self: flex-end;
+}
+.contenedorflex > .elementohijo2 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  align-self: flex-start;
+}
+.contenedorflex > .elementohijo3 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  align-self: center;
+}
 
+.contenedorflex1 {
+  display: flex;
+  background-color: dodgerblue;
+  padding: 20px;
+}
+.contenedorflex1 > .elementos1 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  display: flex;
+  /*no esta heredando el flex de su contenedor */
+}
+.contenedorflex1 > .elementos1 > .elemento11 {
+  background-color: fuchsia;
+  padding: 10px;
+}
+.contenedorflex1 > .elementos1 > .elemento12 {
+  background-color: fuchsia;
+  padding: 10px;
+}
+.contenedorflex1 > .elementos2 {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
 
 /*# sourceMappingURL=hojaestilos.css.map */

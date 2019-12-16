@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"hojaestilos.css"}
+{"version":3,"sourceRoot":"","sources":["../ficherospro/hojaestilos.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;;AACA;AACI;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;;AAEJ;EACI;EACA;EACA;;AAEJ;EACI;EACA;EACA;;AAEJ;EACI;EACA;EACA;;AAEJ;EACI;EACA;EACA;;;AAIR;EACI;EACA;EACA;;AACD;EACC;EACA;EACA;AAAc;;AAEd;EACI;EACA;;AAEJ;EACI;EACA;;AAIL;EACC;EACA","file":"hojaestilos.css"}
