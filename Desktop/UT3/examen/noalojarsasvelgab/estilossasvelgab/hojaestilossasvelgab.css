@@ -1,0 +1,85 @@
+@charset "UTF-8";
+.titulo {
+  text-align: center;
+}
+
+.contenedor {
+  counter-reset: Seccion;
+}
+.contenedor h1 {
+  counter-reset: SubSeccion;
+}
+.contenedor h1:before {
+  counter-increment: Seccion;
+  content: "Capítulo " counter(Seccion) ". ";
+}
+.contenedor h2 {
+  counter-reset: SubSeccion1;
+}
+.contenedor h2:before {
+  counter-increment: SubSeccion;
+  content: counter(Seccion) "." counter(SubSeccion) ". ";
+}
+.contenedor h3:before {
+  counter-increment: SubSeccion1;
+  content: counter(Seccion) "." counter(SubSeccion) "." counter(SubSeccion1) ". ";
+  color: dodgerblue;
+}
+
+.contenedor1 {
+  display: flex;
+  background-color: #f1f1f1;
+  min-height: 400px;
+  float: left;
+  border: 2px solid black;
+}
+
+.contenedor1 > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 1.8rem;
+  border: 2px solid red;
+}
+
+* {
+  /*En todos los elementos vamos a aplicar la
+  propiedad box-sizin, es decir, el padding y border se
+  incluirán en el ancho y alto del elemento*/
+  box-sizing: border-box;
+}
+
+/* Estilo del menú */
+.menusuperior {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Estilo de los elementos del menú */
+.menusuperior a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Efecto al situar el ratón encima de los
+enlaces */
+.menusuperior a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* En pantallas inferiores a 600px, el menú se
+visualizará verticalmente y sus elementos ocuparán el
+100% del ancho */
+@media screen and (max-width: 600px) {
+  .menusuperior a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=hojaestilossasvelgab.css.map */

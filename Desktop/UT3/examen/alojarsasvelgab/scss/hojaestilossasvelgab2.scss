@@ -1,0 +1,64 @@
+.encabezado{
+    text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+    .contenedor{
+        width:50%;
+        float: left;
+        
+    }
+}
+@media screen and (max-width: 500px) {
+    .contenedor{
+        float: none;
+     width: 100%;
+        
+    }
+}
+@mixin borderradius($anchura,$color,$estilo) {
+      
+      box-sizing: border-box;
+      border: $anchura $color $estilo;
+      min-height: 200px;
+      font-family: Arial, Helvetica, sans-serif;
+     
+}
+.contenedor{
+    @include borderradius(4px,red,solid);
+    
+}
+* { /*En todos los elementos vamos a aplicar la
+    propiedad box-sizin, es decir, el padding y border se
+    incluirán en el ancho y alto del elemento*/
+     box-sizing: border-box;
+     }
+     /* Estilo del menú */
+     .menusuperior {
+     overflow: hidden;
+     background-color: #333;
+     }
+     /* Estilo de los elementos del menú */
+     .menusuperior a {
+     float: left;
+     display: block;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     }
+     /* Efecto al situar el ratón encima de los
+    enlaces */
+     .menusuperior a:hover {
+     background-color: #ddd;
+     color: black;
+     }
+     /* En pantallas inferiores a 600px, el menú se
+    visualizará verticalmente y sus elementos ocuparán el
+    100% del ancho */
+     @media screen and (max-width: 500px) {
+     .menusuperior a {
+     float: none;
+     width: 100%;
+     }
+     }
